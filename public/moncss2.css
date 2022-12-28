@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#16bffd,#d39d38,#ff6300);
+    background-position: center;
+    background-size: cover;
+    font-family: 'roboto',sans-serif;
+}
+
+form{
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+form h1{
+    color: #e46565;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    min-width: 300px;
+    border: 1px solid rgb(15, 15, 15);
+    cursor: auto;
+    outline: none;
+
+}
+button{
+    padding: 15px 25px;
+    background-color: rgb(219, 57, 78);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+
+}
+p.inscription{
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: right;
+    color:rgb(31, 29, 29);
+}
+.tailleMessage{
+    text-size-adjust: 5px;
+    font-size: 5px;
+}
+body.bac_formulaireEnreg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#16bffd,#8bd5df,#d3e4f4);
+    background-position: center;
+    background-size: cover;
+    font-family: 'roboto',sans-serif;
+}
+
+form.form_forme{
+    margin: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+form h2{
+    color: #e46565;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.inputs.de{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    min-width: 300px;
+    border: 1px solid rgb(15, 15, 15);
+    cursor: auto;
+    outline: none;
+}
+button.sd{
+    padding: 15px 25px;
+    background-color: rgb(219, 57, 78);
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+
+}
+p.inscription.ss{
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: right;
+    color:rgb(31, 29, 29);
+}
+.erreur{
+    color: red !important;
+    font-size: 11px;
+    margin: 0px;
+
+}
