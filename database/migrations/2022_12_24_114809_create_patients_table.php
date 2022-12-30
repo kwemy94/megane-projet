@@ -16,14 +16,14 @@ return new class extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
             $table->string('name', 30);
-            $table->string('age');
-            $table->string('sexe');
-            $table->float('temperature');
-            $table->float('taille');
-            $table->string('rhesus');
-            $table->string('group-sanguin');
-            $table->string('locality', 30);
-            $table->string('phone');
+            $table->string('age')->nullable();
+            $table->string('sexe')->nullable();
+            $table->float('temperature')->nullable();
+            $table->float('taille')->nullable();
+            $table->string('rhesus')->nullable();
+            $table->string('group-sanguin')->nullable();
+            $table->string('locality', 30)->nullable();
+            $table->string('phone')->nullable();
             $table->timestamps();
         });
     }

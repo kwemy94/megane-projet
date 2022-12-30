@@ -45,10 +45,10 @@
                                 <div class="form-group">
                                     <label for="age"
                                         style="width:50px;font-family:Times New Roman;font-size:20px">age</label>
-                                    <input type="integer" name="age"style="width:50px"required>
-                                    <input type="radio" name="age"value="jour"style="width:50px"required>jour(s)
+                                    <input type="number" name="age"style="width:50px"required>
+                                    {{-- <input type="radio" name="age"value="jour"style="width:50px"required>jour(s)
                                     <input type="radio" name="age"value="moi"style="width:50px"required>mois
-                                    <input type="radio" name="age"value="année"style="width:50px"required>an(s)
+                                    <input type="radio" name="age"value="année"style="width:50px"required>an(s) --}}
                                 </div>
                             </div>
                             <!-- /.col -->

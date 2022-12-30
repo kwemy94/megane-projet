@@ -37,7 +37,8 @@
                                         <td>
                                             <span class="fas fa-pen" title='editer'></span>
                                             <a href="{{route('patient-show', $patient->id)}}"><span class="fas fa-eye" title='Voir'></span></a>
-                                            <span class="fas fa-trash" title='Supprimer'></span>
+                                            <a href="{{route('patient-delete', $patient->id)}}"><span class="fas fa-trash" style="color: red" title='Supprimer'></span></a>
+                                            
                                         </td>
                                     </tr>
                                     @endforeach

@@ -31,3 +31,15 @@ Route::post('/patient/store', [App\http\Controllers\PatientController::class, 's
 Route::get('enregistrement', function () {
     return view('patient.enregistrement');
 });
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/patient/delete/{patient_id}', [App\http\Controllers\PatientController::class, 'destroy'])->name('patient-delete');

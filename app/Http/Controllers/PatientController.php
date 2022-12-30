@@ -24,12 +24,24 @@ class PatientController extends Controller
     public function edit(){
         // return ('patient.edit',)
     }
-    public function store(){
-        $valide=$request->validate(['name'=>'required|unique:patient','age'=>'required|integer']);
+    public function store(Request $request){
+        $valide=$request->validate(['name'=>'required|unique:patients','age'=>'required|integer']);
         $patient=new Patient; //creation d'un objet vide de type patient
         $patient->name=$request['name'];//modification des attributs de l'objet patient
         $patient->age=$request['age'];
         $patient->save();//enregistrer l'objet patient
-        return redirect()->route("{{route('patient-show', $patient->id)}}");
+        return redirect()->route('patient-index')->with('success', 'Patient crée avec success');
+    }
+
+    public function destroy($id) {
+        $patient = Patient::find($id);
+
+        if ($patient) {
+            $patient->delete();
+
+            return redirect()->route('patient-index')->with('success', 'Patient supprimé avec success');
+        }
+
+        return redirect()->route('patient-index')->with('error', 'Impossible de supprimer le patient');
     }
 }
